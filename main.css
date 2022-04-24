@@ -52,6 +52,7 @@ button {
   bottom: -40px;
   border: transparent;
   margin: auto;
+  -webkit-tap-highlight-color: transparent;
 }
 button:hover {
   box-shadow: hsl(150, 100%, 66%) 0px 0px 36px 0px;
