@@ -54,9 +54,6 @@ button {
   margin: auto;
   -webkit-tap-highlight-color: transparent;
   outline: none !important;
-}
-button:hover {
-  box-shadow: hsl(150, 100%, 66%) 0px 0px 36px 0px;
   cursor: pointer;
 }
 button.roll > img {
@@ -80,5 +77,13 @@ section div:last-of-type {
   }
   .dekstop {
     display: block;
+  }
+  button:hover {
+    box-shadow: hsl(150, 100%, 66%) 0px 0px 36px 0px;
+  }
+}
+@media (max-width: 600px) {
+  button.roll {
+    box-shadow: hsl(150, 100%, 66%) 0px 0px 36px 0px;
   }
 }
