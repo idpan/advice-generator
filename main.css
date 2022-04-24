@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  font-size: 14px;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  color: hsl(193, 38%, 86%);
+  font-family: "Manrope";
+  text-align: center;
+  padding: 20px;
+  font-weight: 800;
+}
+section {
+  position: relative;
+  background-color: hsl(217, 19%, 24%);
+  min-width: 200px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  padding-bottom: 0;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 5px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+p {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+button {
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: -40px;
+  border: transparent;
+  margin: auto;
+}
+button:hover {
+  box-shadow: hsl(150, 100%, 66%) 0px 0px 36px 0px;
+  cursor: pointer;
+}
+button.roll > img {
+  transition: all ease-out 1s;
+  transform: rotate(360deg);
+}
+button > img {
+  width: 30px;
+}
+
+.dekstop {
+  display: none;
+}
+
+section div:last-of-type {
+  margin-bottom: 5rem;
+}
+@media (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+  .dekstop {
+    display: block;
+  }
+}
